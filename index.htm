@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daniyal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h1 class="d2">Name:-</h1>
+    Firstname :- <input  type="text" id="firstname"><br><br>
+    
+    Lastname :- <input  type="text" id="lastname"><br><br><br>
+    
+    <button class="d1" onclick="daniyalkhan()" >submit</button><br><br><br>
+    
+    <div id="div"> </div><br><br>
+
+</div><br><br>
+<div class="daniyal">
+    <h1 class="d3"><b>value calculate:-</b></h1>
+    Value 1:- <input type="number" id="numb"><br><br> 
+    Value 2:- <input type="number" id="numbe"><br><br>
+<button class="d4" onclick="plus()">+</button>
+<button class="d5" onclick="minus()">-</button><br><br>
+<button class="d6" onclick="multi()">*</button>
+<button class="d7" onclick="divide()">/</button><br>
+<div id="khan"></div>
+</div>
+<script>
+    function daniyalkhan(){
+    let firstname = document.getElementById("firstname").value
+    let lastname= document.getElementById("lastname").value
+    document.getElementById("div").innerText = firstname +" "+ lastname
+}
+function plus(){
+    let num1 =  document.getElementById("numb").value
+    let num2= document.getElementById("numbe").value
+    document.getElementById("khan").innerText = num1 + num2
+}
+function minus(){
+    let num1 = document.getElementById("numb").value
+    let num2= document.getElementById("numbe").value
+    document.getElementById("khan").innerText = num1 - num2
+}
+function multi(){
+    let num1 = document.getElementById("numb").value
+    let num2= document.getElementById("numbe").value
+    document.getElementById("khan").innerText = num1 * num2
+}
+function divide(){
+    let num1 = document.getElementById("numb").value
+    let num2= document.getElementById("numbe").value
+    document.getElementById("khan").innerText = num1 / num2
+}
+     
+
+</script>
+
+
+</body>
+</html>
